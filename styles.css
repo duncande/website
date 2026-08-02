@@ -347,6 +347,36 @@ a:hover {
   font-weight: 600;
 }
 
+/* Hero Profile Row (Unified Photo + Name/Rank/School) */
+.hero-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-profile-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid var(--accent-crimson);
+  box-shadow: var(--shadow-crimson);
+  flex-shrink: 0;
+}
+
+.hero-profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .hero-bio {
   font-size: 1.05rem;
   color: var(--text-secondary);
