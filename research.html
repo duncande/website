@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Published Research | Denvil R. Duncan | Indiana University</title>
+  <meta name="description" content="Published peer-reviewed articles and research papers by Professor Denvil R. Duncan in public finance, tax policy, tax evasion, transportation taxation, and labor economics.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header-navbar">
+    <div class="header-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-badge">DD</div>
+        <span class="brand-text">Denvil R. Duncan</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="research.html" class="nav-link active">Research</a></li>
+        <li><a href="working-papers.html" class="nav-link">Working Papers</a></li>
+        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="btn-theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          🌙
+        </button>
+        <a href="https://duncande.github.io/MyCV/Duncan_CV_2026.pdf" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main>
+    <section class="section-container" style="padding-top: 120px;">
+      <div class="section-header">
+        <div class="section-subtitle">Scholarly Contributions</div>
+        <h1 class="section-title">Published Peer-Reviewed Research</h1>
+        <p style="font-size: 1.05rem; color: var(--text-secondary); margin-top: 10px; max-width: 800px;">
+          This page contains a self-contained listing of peer-reviewed journal articles authored or co-authored by Prof. Denvil R. Duncan. Use the topic filters or search bar below to filter publications by domain or author.
+        </p>
+      </div>
+
+      <!-- Controls: Topic Filters & Search -->
+      <div class="controls-bar">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-category="all">All Topics</button>
+          <button class="filter-btn" data-category="tax-policy">Tax Policy & Evasion</button>
+          <button class="filter-btn" data-category="transportation">Transportation Taxes</button>
+          <button class="filter-btn" data-category="labor-supply">Labor Supply</button>
+          <button class="filter-btn" data-category="housing-public">Housing & Public Policy</button>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search publications, co-authors...">
+        </div>
+      </div>
+
+      <!-- Publications List Container -->
+      <div id="publicationsContainer" class="papers-list">
+        <!-- Rendered via app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- BibTeX Modal -->
+  <div id="bibtexModal" class="modal-overlay" onclick="if(event.target === this) closeBibtexModal()">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">BibTeX Citation</h3>
+        <button class="modal-close" onclick="closeBibtexModal()">&times;</button>
+      </div>
+      <pre id="bibtexCode" class="bibtex-code"></pre>
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button onclick="closeBibtexModal()" class="btn-secondary">Close</button>
+        <button onclick="copyBibtex()" class="btn-primary">Copy Citation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <p>© 2026 Denvil R. Duncan. All rights reserved. Indiana University Bloomington.</p>
+      <p style="font-size: 0.82rem;">Published Research Repository</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
