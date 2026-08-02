@@ -1094,8 +1094,27 @@ footer {
     padding-right: 16px;
   }
 
+  .hero-profile-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px;
+  }
+
+  .hero-profile-avatar {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .hero-profile-details {
+    align-items: center;
+    text-align: center;
+  }
+
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     line-height: 1.25;
   }
 
