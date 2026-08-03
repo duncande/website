@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://duncande.github.io/sitemap.xml
