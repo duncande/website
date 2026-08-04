@@ -7,32 +7,32 @@
 const publicationsData = [
   {
     id: "doerrenberg-2025-taxevasion",
-    title: "How Does Firm Tax Evasion Affect Prices?",
+    title: "How Do Tax Evasion Opportunities Affect Prices?",
     authors: "Denvil Duncan, Philipp Doerrenberg",
     journal: "National Tax Journal (Accepted / Forthcoming)",
     year: 2025,
     category: "tax-policy",
     abstract: "We use two experiments to examine how tax evasion opportunities affect market prices. In both experiments, buyers and sellers trade a fictitious good subject to a per-unit seller tax. We show in the first experiment that equilibrium prices fall when evasion is possible, reflecting a lower effective tax burden. We hold the effective tax burden constant in the second experiment and find that markets with evasion opportunities tend to trade at higher prices than markets without evasion opportunities. The effect size exceeds half the effective tax rate and one standard deviation of mean prices, highlighting meaningful price and incidence implications.",
     status: "Accepted / Forthcoming",
-    link: "http://papers.denvilrduncan.com/paper_write_20190522.pdf"
+    link: "https://www.journals.uchicago.edu/doi/10.1086/741734"
   },
   {
     id: "duncan-2025-airbnb",
     title: "Air BNB Expansion and Housing Prices: Evidence from a Celestial Lottery",
     authors: "Denvil Duncan, Justin M. Ross",
     journal: "Journal of Regional Science (Accepted / Forthcoming)",
-    year: 2025,
+    year: 2026,
     category: "housing-public",
     abstract: "This study exploits the 2017 solar eclipse as a natural experiment to estimate the causal impact of Airbnb activity on housing prices. The eclipse created a temporary demand shock that induced a persistent increase in Airbnb supply. Using an IV/2SLS framework, we find that a 1% increase in Airbnb listings raises housing prices by 0.037–0.043%, a magnitude consistent with prior studies. We find no evidence of a displacement effect, suggesting that the price response is driven by the capitalization of rental income from utilizing excess housing capacity. Our findings suggest that partial bans on investor listings may have limited efficacy in improving affordability in areas where the capitalization effect is strong.",
     status: "Accepted / Forthcoming",
-    link: null
+    link: "https://onlinelibrary.wiley.com/doi/10.1111/jors.70086"
   },
   {
     id: "duncan-2025-tax",
     title: "Decentralization, privatization, and firm tax compliance",
     authors: "Denvil Duncan, Yongzheng Liu, Hailun Wei",
-    journal: "International Tax and Public Finance (Available online)",
-    year: 2025,
+    journal: "International Tax and Public Finance, 33: 469-513",
+    year: 2026,
     category: "tax-policy",
     abstract: "This study examines the tax compliance effect of changing the ownership structure of state-owned enterprises (SOEs) using a large dataset of Chinese industrial firms. We exploit the variation in SOEs ownership—oversight authority shifted from one level of government to either a lower one (i.e., decentralization) or to the private sector (i.e., privatization), in a difference-in-differences framework to find that both decentralization and privatization causes an increase in tax compliance as measured by effective tax rate. Additionally, we find evidence that while the decentralization results are driven by the reduced distance between a decentralized SOE and its oversight government, the privatization results appear to be driven by greater tax-scrutiny. Decentralization and privatization are often seen as strategies to improve efficiency in the affected markets. Our results suggest that changes in firm ownership strengthened the state’s capacity to raise revenues in the post-SOE reform period, which partially explains the country’s success in economic transition.",
     status: "Published",

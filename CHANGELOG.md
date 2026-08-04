@@ -5,6 +5,15 @@ All notable changes to Professor Denvil R. Duncan's Academic Website project wil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to semantic versioning standards.
 
+## [1.2.0] - 2026-08-04
+
+### Changed
+- **Publication Titles & Citation Metadata**: Updated paper title from "How Does Firm Tax Evasion Affect Prices?" to "How Do Tax Evasion Opportunities Affect Prices?" in `app.js`.
+- **Publication Links & Acceptance Years**: Added Journal of Regional Science publication DOI link and updated acceptance year to 2026 for *Air BNB Expansion and Housing Prices: Evidence from a Celestial Lottery*. Added National Tax Journal DOI link for tax evasion paper.
+- **Journal Publication Details**: Updated *Decentralization, privatization, and firm tax compliance* to published volume/page citation (`International Tax and Public Finance, 33: 469-513`) and year 2026 across `app.js` and `index.html`.
+
+---
+
 ## [1.1.0] - 2026-08-03
 
 ### Added
