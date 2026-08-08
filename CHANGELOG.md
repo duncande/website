@@ -10,12 +10,12 @@ and this project adheres to semantic versioning standards.
 ### Added
 - **Repository Protocol (`AGENTS.md`)**: Established automated startup (`git pull`), in-session local buffering, and shutdown (`CHANGELOG.md` update + `git push`) protocols for AI pair programming sessions.
 - **Dynamic Recent Research Renderer (`app.js` & `index.html`)**: Implemented `renderRecentPublished()` to dynamically fetch and display the top 5 most recent Published/Accepted research papers, automatically rolling off older papers when new entries are added or updated.
-- **Academic Leadership Section (`index.html`)**: Added an Academic Leadership showcase card on the homepage summarizing institutional board governance and journal editorial roles from `service.html`.
+- **Leadership Section (`index.html`)**: Added a Leadership showcase card on the homepage summarizing institutional board governance and journal editorial roles from `service.html`.
 
 ### Changed
 - **Homepage Profile Header (`index.html` & `styles.css`)**: Increased hero headshot avatar dimensions (to 210px desktop / 180px mobile) and scaled name heading font size (`1.15rem`) to match "Professor of Economics" title.
 - **Biography & Media Sections (`index.html`)**: Removed the Forbes profile spotlight card and the `Public & Labor Economics` research tag pill under the biography section.
-- **Academic Leadership Section (`index.html`)**: Streamlined governance and editorial cards by removing detailed description paragraphs for a cleaner listing.
+- **Leadership Section (`index.html`)**: Renamed section heading from "Academic Leadership" to "Leadership" and streamlined governance and editorial cards for a concise listing.
 
 ---
 
