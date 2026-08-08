@@ -13,6 +13,7 @@ and this project adheres to semantic versioning standards.
 
 ### Changed
 - **Homepage Profile Header (`index.html` & `styles.css`)**: Increased hero headshot avatar dimensions (to 210px desktop / 180px mobile) and scaled name heading font size (`1.15rem`) to match "Professor of Economics" title.
+- **Biography Research Focus Pills (`index.html`)**: Removed the `Public & Labor Economics` research tag pill under the biography section.
 
 ---
 
