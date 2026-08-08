@@ -361,8 +361,8 @@ a:hover {
 }
 
 .hero-profile-avatar {
-  width: 160px;
-  height: 160px;
+  width: 210px;
+  height: 210px;
   border-radius: var(--radius-md);
   object-fit: cover;
   object-position: top center;
@@ -1151,8 +1151,8 @@ footer {
   }
 
   .hero-profile-avatar {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
   }
 
