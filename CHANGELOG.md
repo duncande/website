@@ -16,6 +16,7 @@ and this project adheres to semantic versioning standards.
 - **Homepage Profile Header (`index.html` & `styles.css`)**: Increased hero headshot avatar dimensions (to 210px desktop / 180px mobile) and scaled name heading font size (`1.15rem`) to match "Professor of Economics" title.
 - **Biography & Media Sections (`index.html`)**: Removed the Forbes profile spotlight card and the `Public & Labor Economics` research tag pill under the biography section.
 - **Leadership Section (`index.html`)**: Renamed section heading from "Academic Leadership" to "Leadership" and streamlined governance and editorial cards for a concise listing.
+- **Recently Published Research Header (`index.html`)**: Removed the "Academic Overview" subtitle and paragraph description, titling the section directly as "Recently Published Research" above the 5 most recent papers.
 
 ---
 
