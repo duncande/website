@@ -5,6 +5,13 @@ All notable changes to Professor Denvil R. Duncan's Academic Website project wil
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to semantic versioning standards.
 
+## [1.3.0] - 2026-08-08
+
+### Added
+- **Repository Protocol (`AGENTS.md`)**: Established automated startup (`git pull`), in-session local buffering, and shutdown (`CHANGELOG.md` update + `git push`) protocols for AI pair programming sessions.
+
+---
+
 ## [1.2.0] - 2026-08-04
 
 ### Changed

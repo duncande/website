@@ -12,7 +12,7 @@
 This repository powers the official personal website of **Professor Denvil R. Duncan**. The site serves as an authoritative digital academic portfolio highlighting his research, teaching, service, and professional contributions.
 
 ### Key Objectives:
-1. **Academic Visibility & Search Presence (SEO)**: Maximize search engine ranking for key research queries, including *mileage tax*, *tax evasion*, *CAFE standards*, *platform labor discrimination*, and *food insecurity*.
+1. **Academic Visibility & Search Presence (SEO)**: Maximize search engine ranking for key research queries, including *mileage tax*, *tax evasion*, *CAFE standards*, *platform labor market*, *discrimination*, and *food insecurity*.
 2. **Research Showcase**: Provide scholars, policymakers, and students with immediate access to published articles, working paper manuscripts, abstracts, and BibTeX citations.
 3. **Modern User Experience**: Deliver a fast, mobile-responsive, accessible interface featuring smooth dark/light mode switching and interactive paper filtering.
 
