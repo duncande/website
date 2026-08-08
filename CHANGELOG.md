@@ -9,6 +9,7 @@ and this project adheres to semantic versioning standards.
 
 ### Added
 - **Repository Protocol (`AGENTS.md`)**: Established automated startup (`git pull`), in-session local buffering, and shutdown (`CHANGELOG.md` update + `git push`) protocols for AI pair programming sessions.
+- **Dynamic Recent Research Renderer (`app.js` & `index.html`)**: Implemented `renderRecentPublished()` to dynamically fetch and display the top 5 most recent Published/Accepted research papers, automatically rolling off older papers when new entries are added or updated.
 
 ### Changed
 - **Homepage Profile Header (`index.html` & `styles.css`)**: Increased hero headshot avatar dimensions (to 210px desktop / 180px mobile) and scaled name heading font size (`1.15rem`) to match "Professor of Economics" title.

@@ -482,12 +482,71 @@ let wpSearchQuery = "";
 // DOM Elements
 document.addEventListener("DOMContentLoaded", () => {
   setActiveNavHighlight();
+  renderRecentPublished();
   renderPublications();
   renderWorkingPapers();
   initThemeToggle();
   initSearch();
   initFilterTabs();
 });
+
+// Render 5 Most Recent Published/Accepted Papers (Homepage Academic Overview)
+function renderRecentPublished() {
+  const container = document.getElementById("recentPublishedContainer");
+  if (!container) return;
+
+  // Filter for Published or Accepted/Forthcoming papers
+  const eligible = publicationsData.filter(pub => 
+    pub.status === "Published" || pub.status === "Accepted / Forthcoming"
+  );
+
+  // Sort by publication year descending (most recent first)
+  const sorted = [...eligible].sort((a, b) => b.year - a.year);
+
+  // Slice strictly top 5 most recent papers
+  const recentTop5 = sorted.slice(0, 5);
+
+  if (recentTop5.length === 0) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 40px; color: var(--text-muted);">
+        <p style="font-size: 1.1rem;">No recent publications available.</p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = recentTop5.map(pub => `
+    <div class="paper-card" id="recent-${pub.id}">
+      <div class="paper-header">
+        <h3 class="paper-title">${pub.title}</h3>
+        <span class="paper-year-badge">${pub.year}</span>
+      </div>
+      <p class="paper-authors">${highlightAuthor(pub.authors)}</p>
+      <p class="paper-journal">${pub.journal}</p>
+      <div class="paper-actions">
+        <details class="abstract-details">
+          <summary class="btn-icon-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            Abstract <span class="dropdown-arrow">▾</span>
+          </summary>
+          <div class="abstract-content-box">
+            <p>${pub.abstract}</p>
+          </div>
+        </details>
+        ${pub.link ? `
+          <a href="${pub.link}" target="_blank" rel="noopener" class="btn-icon-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Article Link
+          </a>
+        ` : ''}
+        <button onclick="openBibtexModal('${pub.id}')" class="btn-icon-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+          BibTeX Citation
+        </button>
+      </div>
+    </div>
+  `).join("");
+}
 
 // Auto-highlight active link based on current filename
 function setActiveNavHighlight() {
